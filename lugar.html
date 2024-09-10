@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="style.css" title="Estilo principal">
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+        <script src="main.js"></script>
+        <title>Acerca del lugar</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/logo1.png" alt="logo">
+            <h1>T de Tapas</h1>
+            <h2>El mejor sitio para descubrir nuevos restaurantes</h2><br>
+        </header>
+
+        <nav>
+            <input type="checkbox" class="chk" id="menu">
+            <label class="hola" for="menu">☰</label>
+            <ul id="barramenu">
+            </ul>
+        </nav>
+        
+        <div class="centraimagen">
+            <img class="mono" src="img/casapaco.jpg" alt="casapaco">
+        </div><br>
+            <fieldset class="lugar">
+                <h2><strong>Casa Paco</strong></h2>
+                <p><span class="icon-address"></span><strong>Dirección: </strong>c/ Córdoba, 13</p>
+                <p><span class="icon-town-hall"></span><strong>Población: </strong>San Vicent del Raspeig</p>
+                <p><span class="icon-building-filled"></span><strong>Provincia: </strong>Alicante</p>
+                <p><span class="icon-star"></span><strong>Valoración media de los usuarios: </strong>4</p>
+                <p><span class="icon-list-numbered"></span><a href="#coms"><strong>Número de valoraciones: </strong>3</a></p>
+                <p><span class="icon-comment"></span><strong>Comentario: </strong>Casa Paco es un restaurante de tapas que acoge platos de todo tipo de comida española, pero principalmente de la gastronomía mediterránea.</p>
+                <p><span class="icon-tag"></span><strong>Etiquetas: </strong></p>
+                <p><a href="buscar.html">Barato</a></p>
+                <p><a href="buscar.html">Comida casera</a></p>
+                <p><a href="buscar.html">Limpio</a></p>
+                <p><span class="icon-calendar"></span><strong>Fecha en la que se añadió: </strong>20 de Marzo de 2028</p>
+                <p><span class="icon-user"></span><strong>Usuario: </strong>@alfonsito13</p>
+                <h2><span class="icon-camera"></span><strong>Fotos:</strong></h2>
+                <div class="centraimagen">
+                    <img class="mono" src="img/paco1.jpg" alt="casapaco1">
+                </div><br>
+                <div class="centraimagen">
+                    <img class="mono" src="img/paco2.jpg" alt="casapaco2">
+                </div><br>
+            </fieldset><br>
+            <a id="coms"></a>
+            <fieldset class="lugar">
+                <h2><span class="icon-star"></span><strong>Valoraciones</strong></h2><br>
+                    <p><a href="buscar.html">@Maria_173</a><em> a lunes, 5 de Enero de 2020 a las 17:15h</em></p>
+                    <p><strong>Valoración: </strong>4</p>
+                    <p>Gran servicio, y la comida muy buena, se nota que es casero. Le doy un 5 porqué había mucho ruido en la sala, pero por lo demás muy bien.</p><br>
+                    <p><a href="buscar.html">@LuisitoG</a><em> a jueves, 19 de Junio de 2019 a las 20:57</em></p>
+                    <p><strong>Valoración: </strong>5</p>
+                    <p>La comida de 10, y los camareros muy atentos y simpáticos, todo muy bien.</p><br>
+                    <p><a href="buscar.html">@MarcosFL3</a><em> a sábado, 27 de Diciembre de 2018 a las 12:08</em></p>
+                    <p><strong>Valoración: </strong>3</p>
+                    <p>Buen restaurante, barato, y un buena comida. El servicio si que deja algo que desear, los camareros iban un poco perdidos. Por lo demás bastante bien.</p><br>
+                    <h2><strong>Dejar una valoración</strong></h2><br>
+                    <form>
+                        <p><span class="icon-address-book"></span><label for="titu"><strong>Título:</strong></label><br>
+                        <input type="text" id="titu" name="titu"><br>
+                        <p><span class="icon-star"></span><label for="val"><strong>Valoración:</strong></label><br>
+                        <input type="number" min="0" max="5" id="val" name="val"><br>
+                        <p><span class="icon-comment"></span><label for="coment"><strong>Comentario:</strong></label><br>
+                        <textarea id="coment" name="coment" rows="4" cols="50"></textarea><br>
+                        <input type="reset" value="Borrar">
+                        <input type="submit" value="Enviar">
+                        <p><a href="login.html">Debes estar logueado para dejar una valoración</a></p>
+                    </form>
+            </fieldset>
+
+        <footer>
+            <p>Copyright &copy;<time datetime="2022"> 2022 </time> &nbsp; David Alfredo Pina Pellín - Daniel Laguna Contreras &nbsp; <a href="index.html">Página principal</a> &nbsp;
+            <a href="acerca.html">Acerca de la practica</a></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="style.css" title="Estilo principal">
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+        <script src="main.js"></script>
+        <title>Nuevo lugar</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/logo1.png" alt="logo">
+            <h1>T de Tapas</h1>
+            <h2>El mejor sitio para descubrir nuevos restaurantes</h2><br>
+        </header>
+        
+        <nav>
+            <input type="checkbox" class="chk" id="menu">
+            <label class="hola" for="menu">☰</label>
+            <ul id="barramenu">
+            </ul>
+        </nav>
+
+        <div>
+            <form>
+                <fieldset>
+                    <legend><strong>Añadir un lugar</strong></legend>
+                    <p><span class="icon-restaurant"></span><label for="nombre"><strong>Nombre del lugar:</strong></label><br>
+                    <input type="text" id="nombre" name="nombre" maxlength ="150" required></p>
+                    <p><span class="icon-address"></span><label for="dir"><strong>Dirección:</strong></label><br>
+                    <input type="text" id="dir" name="dir" maxlength ="150" required></p>
+                    <p><span class="icon-town-hall"></span><label for="pob"><strong>Población:</strong></label><br>
+                    <input type="text" id="pob" name="pob" maxlength ="150" required></p>
+                    <p><span class="icon-building-filled"></span><label for="prov"><strong>Provincia:</strong></label><br>
+                    <input type="text" id="prov" name="prov" maxlength ="150" required></p>
+                    <p><span class="icon-comment"></span><label for="coment"><strong>Comentario:</strong></label><br>
+                    <textarea id="coment" name="coment" rows="4" cols="50" maxlength ="300" required></textarea><br>
+                    <p><span class="icon-tag"></span><label for="eti"><strong>Añadir etiqueta:</strong></label><br>
+                    <input type="text" id="eti" name="eti"><input type="button" value="Añadir"></p>
+                    <p><label for="lista"><strong>Etiquetas existentes:</strong></label><br>
+                    <input list="etiq" name="lista" id="lista">
+                    <datalist id="etiq">
+                        <option value="Barato">
+                        <option value="Comida casera">
+                        <option value="Limpio">
+                        <option value="Tapas">
+                        <option value="Comida rápida">
+                    </datalist></p>
+                    <p>Comida italiana <input type="button" value="Borrar"></p>
+                    <p>Amplio <input type="button" value="Borrar"></p>
+                    <p>Buen servicio <input type="button" value="Borrar"></p>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </div><br>
+        <div>
+            <form>
+                <fieldset>
+                    <h2>Fotos</h2>
+                    <p><label for="foto"><img class="mono" src="img/blanco.jpg" alt="blanco"></label><br>
+                    <input type="file" id="foto" name="foto" accept="image/*"></p>
+                    <input type="submit" value="Borrar">
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </div>
+
+        <footer>
+            <p>Copyright &copy;<time datetime="2022"> 2022 </time> &nbsp; David Alfredo Pina Pellín - Daniel Laguna Contreras &nbsp; <a href="index.html">Página principal</a> &nbsp;
+            <a href="acerca.html">Acerca de la practica</a></p>
+        </footer>
+    </body>
+</html>

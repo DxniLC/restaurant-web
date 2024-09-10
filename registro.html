@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="style.css" title="Estilo principal">
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+        <script src="main.js"></script>
+        <title>Registro</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/logo1.png" alt="logo">
+            <h1>T de Tapas</h1>
+            <h2>El mejor sitio para descubrir nuevos restaurantes</h2><br>
+        </header>
+
+        <nav>
+            <input type="checkbox" class="chk" id="menu">
+            <label class="hola" for="menu">☰</label>
+            <ul id="barramenu">
+            </ul>
+        </nav>
+        
+        <div>
+            <form id="form_registro" onsubmit="return hacerRegistro(this);">
+                <fieldset>
+                    <legend><strong>Formulario de registro</strong></legend>
+                    <p><span class="icon-user"></span><label for="login"><strong>Nombre de usuario:</strong></label><br>
+                    <input type="text" id="login" name="login" minlength="6" maxlength="20" pattern ="^(?![0-9]{1})[A-Za-z0-9]+$" required autofocus></p>
+                    <p><span class="icon-key"></span><label for="pwd"><strong>Contraseña:</strong></label><br>
+                    <input type="password" id="pwd" name="pwd" minlength="6" maxlength="20" pattern="^[A-Za-z0-9-._]+$" required></p>
+                    <p><span class="icon-key"></span><label for="pwd2"><strong>Repetir contraseña:</strong></label><br>
+                    <input type="password" id="pwd2" name="pwd2"></p>
+                    <strong><span class="icon-camera"></span>Foto:</strong>
+                    <p><label for="foto"><img src="img/usuario.png" class="imgreg" alt="usuario"></label><br>
+                    <input class="hidden" type="file" id="foto" name="foto" accept="image/*"></p>
+                    <input type="button" value="Borrar foto">
+                    <input type="submit" value="Registro">
+                </fieldset>
+            </form>
+        </div>
+        <footer>
+            <p>Copyright &copy;<time datetime="2022"> 2022 </time> &nbsp; David Alfredo Pina Pellín - Daniel Laguna Contreras &nbsp; <a href="index.html">Página principal</a> &nbsp;
+            <a href="acerca.html">Acerca de la practica</a></p>
+        </footer>
+    </body>
+</html>

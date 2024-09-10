@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="style.css" title="Estilo principal">
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+        <script src="main.js"></script>
+        <title>Login</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/logo1.png" alt="logo">
+            <h1>T de Tapas</h1>
+            <h2>El mejor sitio para descubrir nuevos restaurantes</h2><br>
+        </header>
+        <nav>
+            <input type="checkbox" class="chk" id="menu">
+            <label class="hola" for="menu">☰</label>
+            <ul id="barramenu">
+            </ul>
+        </nav>
+
+        <div>
+            <form onsubmit="return hacerLogin(this);">
+                <fieldset>
+                    <legend><strong>Login</strong></legend>
+                        <p><span class="icon-user"></span><label for="login"><strong>Nombre de usuario:</strong></label><br>
+                        <input type="text" name="login" id="login" required autofocus></p>
+                        <p><span class="icon-key"></span><label for="pwd"><strong>Contraseña:</strong></label><br>
+                        <input type="password" name="pwd" id="pwd" required></p>
+                        <label><input type="checkbox" id="cbox1" value="ch1">Recuérdame</label><br>
+                        <p>
+                            <input type="submit" value="Iniciar Sesion">
+                        </p>
+                        <div><h3>Registrate aquí</h3>
+                        <input type="button" class="botonnotorio" value="Registrarse" onclick="window.location.href='registro.html'"></div>
+                </fieldset>
+            </form>
+        </div>
+
+        <footer>
+            <p>Copyright &copy;<time datetime="2022"> 2022 </time> &nbsp; David Alfredo Pina Pellín - Daniel Laguna Contreras &nbsp; <a href="index.html">Página principal</a> &nbsp;
+            <a href="acerca.html">Acerca de la practica</a></p>
+        </footer>
+    </body>
+</html>

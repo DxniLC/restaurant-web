@@ -1,0 +1,20 @@
+
+.icon-home:before { content: '\e800'; } /* '' */
+.icon-search:before { content: '\e801'; } /* '' */
+.icon-login:before { content: '\e802'; } /* '' */
+.icon-logout:before { content: '\e803'; } /* '' */
+.icon-star:before { content: '\e804'; } /* '' */
+.icon-address:before { content: '\e805'; } /* '' */
+.icon-tag:before { content: '\e806'; } /* '' */
+.icon-key:before { content: '\e807'; } /* '' */
+.icon-globe:before { content: '\e808'; } /* '' */
+.icon-calendar:before { content: '\e809'; } /* '' */
+.icon-camera:before { content: '\e80a'; } /* '' */
+.icon-comment:before { content: '\e80b'; } /* '' */
+.icon-user:before { content: '\e80c'; } /* '' */
+.icon-restaurant:before { content: '\e832'; } /* '' */
+.icon-town-hall:before { content: '\e83c'; } /* '' */
+.icon-list-numbered:before { content: '\f0cb'; } /* '' */
+.icon-building-filled:before { content: '\f1ad'; } /* '' */
+.icon-user-plus:before { content: '\f234'; } /* '' */
+.icon-address-book:before { content: '\f2b9'; } /* '' */

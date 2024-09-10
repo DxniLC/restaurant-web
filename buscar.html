@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="style.css" title="Estilo principal">
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+        <script src="main.js"></script>
+        <title>Buscar</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/logo1.png" alt="logo">
+            <h1>T de Tapas</h1>
+            <h2>El mejor sitio para descubrir nuevos restaurantes</h2><br>
+        </header>
+        <nav>
+            <input type="checkbox" class="chk" id="menu">
+            <label class="hola" for="menu">☰</label>
+            <ul id="barramenu">
+            </ul>
+        </nav>
+        <div>
+            <form>
+                <fieldset>
+                    <legend><strong>Buscar lugares</strong></legend>
+                    <p><span class="icon-restaurant"></span><label for="nombre"><strong>Nombre:</strong></label><br>
+                    <input type="text" id="nombre" name="nombre"></p>
+                    <p><span class="icon-globe"></span><label for="ubi"><strong>Ubicación:</strong></label><br>
+                    <input type="text" id="ubi" name="ubi"></p>
+                    <p><span class="icon-star"></span><label for="valora"><strong>Valoración desde:</strong></label><br>
+                        <select name="valora" id="valora">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <label for="valora2">y</label>
+                        <select name="valora2" id="valora2">
+                            <option>5</option>
+                            <option>4</option>
+                            <option>3</option>
+                            <option>2</option>
+                            <option>1</option>
+                        </select>
+                        <p><span class="icon-tag"></span><label for="eti"><strong>Etiqueta:</strong></label><br>
+                        <input type="text" id="eti" name="eti"></p>
+                        <input type="submit" value="Buscar">
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="cajas">
+            <div>
+                <a href="lugar.html"><img src="img/casapaco.jpg" class="redondo" alt="casapaco"></a>
+                <p><a href="lugar.html"><strong>Nombre: Casa Paco</strong></a></p>
+                <p><span class="icon-star"></span><strong>Valoración: 4</strong></p>
+                <p><span class="icon-town-hall"></span><strong>Población: San Vicent del Raspeig</strong></p>
+                <p><span class="icon-building-filled"></span><strong>Provincia: Alicante</strong></p>
+            </div>
+            <div>
+                <a href="lugar.html"><img src="img/espain.jpg" class="redondo" alt="barespaña"></a>
+                <p><a href="lugar.html"><strong>Nombre: Bar España</strong></a></p>
+                <p><span class="icon-star"></span><strong>Valoración: 4</strong></p>
+                <p><span class="icon-town-hall"></span><strong>Población: Vallecas</strong></p>
+                <p><span class="icon-building-filled"></span><strong>Provincia: Madrid</strong></p>
+            </div>
+            <div>
+                <a href="lugar.html"><img src="img/torrente.jpg" class="redondo" alt="bartorrente"></a>
+                <p><a href="lugar.html"><strong>Nombre: Bar Torrente</strong></a></p>
+                <p><span class="icon-star"></span><strong>Valoración: 3</strong></p>
+                <p><span class="icon-town-hall"></span><strong>Población: Vigo</strong></p>
+                <p><span class="icon-building-filled"></span><strong>Provincia: Vigo</strong></p>
+            </div>
+            <div>
+                <a href="lugar.html"><img src="img/allah.jpg" class="redondo" alt="resthamabi"></a>
+                <p><a href="lugar.html"><strong>Nombre: Hamabi restaurante</strong></a></p>
+                <p><span class="icon-star"></span><strong>Valoración: 5</strong></p>
+                <p><span class="icon-town-hall"></span><strong>Población: Pamplona</strong></p>
+                <p><span class="icon-building-filled"></span><strong>Provincia: Navarra</strong></p>
+            </div>
+            <div>
+                <a href="lugar.html"><img src="img/chiri.jpg" class="redondo" alt="xiri"></a>
+                <p><a href="lugar.html"><strong>Nombre: Xiri</strong></a></p>
+                <p><span class="icon-star"></span><strong>Valoración: 5</strong></p>
+                <p><span class="icon-town-hall"></span><strong>Población: Monóvar</strong></p>
+                <p><span class="icon-building-filled"></span><strong>Provincia: Alicante</strong></p>
+            </div>
+            <div>
+                <a href="lugar.html"><img src="img/ramen.jpg" class="redondo" alt="sendero6"></a>
+                <p><a href="lugar.html"><strong>Nombre: Natsu Ramen</strong></a></p>
+                <p><span class="icon-star"></span><strong>Valoración: 3</strong></p>
+                <p><span class="icon-town-hall"></span><strong>Población: Alcantarilla</strong></p>
+                <p><span class="icon-building-filled"></span><strong>Provincia: Murcia</strong></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Copyright &copy;<time datetime="2022"> 2022 </time> &nbsp; David Alfredo Pina Pellín - Daniel Laguna Contreras &nbsp; <a href="index.html">Página principal</a> &nbsp;
+            <a href="acerca.html">Acerca de la practica</a></p>
+        </footer>
+    </body>
+</html>
